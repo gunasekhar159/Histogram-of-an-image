@@ -22,14 +22,15 @@ Anaconda - Python 3.7
 <br>
 
 ## Program:
-```python
+```
+python
 # Developed By:M.GUNASEKHAR
 # Register Number:212221240014
 import cv2
 import matplotlib.pyplot as plt
 
 # Write your code to find the histogram of gray scale image and color image channels.
-```
+
 import cv2
 import matplotlib.pyplot as plt
 gray_image = cv2.imread("grayscale.jpg")
@@ -42,14 +43,13 @@ plt.xlabel('Grayscale value')
 plt.ylabel('Pixel Count')
 plt.stem(hist)
 plt.show()
-```
 
 
 
 
 
 # Display the histogram of gray scale image and any one channel histogram from color image
-```
+
 color_image=cv2.imread("colorimage.jpg")
 plt.imshow(color_image)
 plt.show()
@@ -60,9 +60,9 @@ plt.xlabel("Intensity Value")
 plt.ylabel("Pixel Count")
 plt.stem(hist1)
 plt.show()
-```
+
 # Write the code to perform histogram equalization of the image.
-```
+
 gray_image = cv2.imread('grayscale.jpg',0)
 equ=cv2.equalizeHist(gray_image)
 cv2.imshow('Gray image',gray_image)
